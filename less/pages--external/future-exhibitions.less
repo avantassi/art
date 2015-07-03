@@ -1,0 +1,96 @@
+.future-exhibitions {
+	text-align: center;
+	
+}
+
+.future-exhibitions__item{
+	background-color: #fff;
+	min-height: 410px;
+
+	&--all{
+		margin-bottom: 20px;
+	}
+}
+
+.future-exhibitions__img{
+	width: 100%;
+	position: relative;
+
+	&:hover ~ .hidden-info{
+		display: block;
+		transition: all 0.5s ease-in;
+	}
+}
+
+.hidden-info{
+	display: none;;
+	position: absolute;
+	left: 0;
+	bottom: -103px;
+	width: 205px;
+	height: 220px;
+	background-color: rgba(0,0,0,0.7);
+	text-align: left;
+	padding-left: 20px;
+	padding-top: 80px;
+}
+
+.hidden-info--time{
+	font-size: @font-size-base;
+	color: #fff;
+	font-weight: 600;
+	display: block;
+	padding-bottom: 10px;
+
+	&:before{
+		content: "";
+		background: url(../img/sprites/png/hidden-info--time.png)0 100% no-repeat;
+		padding-left: 20px;
+	}
+}
+
+.hidden-info--point{
+	text-transform: uppercase;
+	font-size: @font-size-base;
+	color: #fff;
+	font-weight: 600;
+	position: relative;
+	padding-left: 20px;
+
+	&:before{
+		position: absolute;
+		content: "";
+		background: url(../img/sprites/png/hidden-info--point.png) 100% no-repeat;
+		width: 19px;
+		height: 20px;
+		left: -5px;
+		top: -5px;
+	}
+}
+
+.future-exhibitions__link{
+	position: relative;
+	text-align: center;
+	width: 100%;
+
+	&:hover{
+		text-decoration: none;
+	}	
+}
+
+.future-exhibitions__date{
+	position: absolute;
+	top: 102px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 60%;
+	text-align: center;
+}
+
+.future-exhibitions__text{
+	font-size: @font-size-base;
+	font-weight: 300;
+	color: @main-text-color;
+	padding: 0 8px;
+}

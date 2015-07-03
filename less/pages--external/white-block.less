@@ -1,0 +1,63 @@
+.white-block{
+	background-color: #fff;
+	margin-top: 60px;
+	padding-bottom: 50px;
+
+	&--no-margin{
+		margin-top: 0;
+	}
+
+	&--no-padding{
+		padding-bottom: 0;
+	}
+}
+
+.comment-text{
+	// font-style: italic;
+	font-size: 16px;
+	font-weight: 300;
+	color: #2e2e2e;
+	line-height: 21px;
+}
+
+.tultip{
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	
+	&:before{
+		display: block;
+		position: absolute;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity .7s;
+	}
+	&:before{
+		content: attr(data-title);
+		width: 74px;
+		height: 41px;
+		background-image: url(../img/sprites/png/tultip.png);
+		background-color: transparent;
+		background-repeat: no-repeat;
+		background-position: center; 
+		bottom: -12px;
+		padding: 8px 18px 8px 8px;
+		margin-left: -108px;
+		text-align: center;
+		font-size: @font-size-base;
+		font-style: italic;
+		font-weight: 300;
+		color: #26211d;
+	}
+	&:hover:before{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+
+.share-social{
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #26211d;
+	padding-right: 20px;
+}
