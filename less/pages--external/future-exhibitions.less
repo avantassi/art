@@ -14,12 +14,6 @@
 
 .future-exhibitions__img{
 	width: 100%;
-	position: relative;
-
-	&:hover ~ .hidden-info{
-		display: block;
-		transition: all 0.5s ease-in;
-	}
 }
 
 .hidden-info{
@@ -78,6 +72,10 @@
 	&:hover{
 		text-decoration: none;
 	}	
+}
+
+.future-exhibitions__link:hover .hidden-info {
+	display: block;
 }
 
 .future-exhibitions__date{
