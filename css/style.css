@@ -388,6 +388,20 @@
   font-weight: 600;
   color: #2c3a29;
 }
+@media screen and (min-width: 768px) {
+  .future-exhibitions__item {
+    width: 205px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .future-exhibitions__item {
+    width: 205px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 .white-block {
   background-color: #fff;
   margin-top: 60px;
