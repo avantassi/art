@@ -121,6 +121,9 @@
 .future-exhibitions__link:hover .hidden-info {
   display: block;
 }
+.future-exhibitions__link:hover .btn-md--date {
+  background-color: rgba(236, 0, 139, 0.8);
+}
 .future-exhibitions__date {
   position: absolute;
   top: 200px;
@@ -675,6 +678,20 @@
 .to-artist-text--margin {
   margin-top: 20px;
 }
+@media screen and (min-width: 768px) {
+  .to-artist {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .to-artist {
+    width: 220px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 .pattern-block {
   min-height: 565px;
   background-image: url(../img/images/pattern.jpg);
@@ -843,6 +860,20 @@ section {
 }
 .border-on-white {
   border: 2px solid #f5f5f5;
+}
+html,
+body {
+  height: 100%;
+}
+.page-wrapper {
+  min-height: 100%;
+  margin-bottom: -50px;
+}
+* html .page-wrapper {
+  height: 100%;
+}
+.page-buffer {
+  height: 50px;
 }
 .main-btn-md {
   background-color: #9dc212;
