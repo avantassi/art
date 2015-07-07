@@ -402,6 +402,20 @@
     margin-bottom: 20px;
   }
 }
+@media screen and (min-width: 768px) {
+  .participant__item {
+    width: 235px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .participant__item {
+    width: 235px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
 .white-block {
   background-color: #fff;
   margin-top: 60px;
@@ -677,6 +691,8 @@
   text-align: left;
 }
 .tab-links li {
+  margin-top: 70px;
+  margin-bottom: 60px;
   display: inline-block;
   list-style: none;
   font-size: 16px;
@@ -693,10 +709,11 @@
   font-weight: 600;
   margin-top: 55px;
   position: relative;
-  margin-bottom: 30px;
-  padding-bottom: 30px;
   border-bottom: none;
   list-style: none;
+}
+.center-align {
+  margin-left: 100px;
 }
 .tab-links a {
   color: #2c3a29;
