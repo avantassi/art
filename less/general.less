@@ -19,16 +19,21 @@ section{
 }
 
 html, body {
-    height: 100%;
+	width: 100%;
+	height: 100%;
 }
-
-.page-wrapper {
-    min-height: 100%;
-    margin-bottom: -50px;
-}
-* html .page-wrapper {
-    height: 100%;
+body {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	position: relative;
 }
 .page-buffer {
-    height: 50px;
+	padding-bottom: 120px;
+}
+footer {
+	height: 120px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
