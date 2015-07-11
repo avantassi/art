@@ -892,7 +892,7 @@
 }
 * {
   box-sizing: border-box;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Poiret One', 'Arial', cursive;
   margin: 0;
   padding: 0;
 }
